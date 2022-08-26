@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPhotos"
+    android:background="@color/postBackground">
+
+    <include
+        android:id="@+id/add_photos_toolbar"
+        layout="@layout/appbar_layout">
+    </include>
+
+    <ImageButton
+        android:id="@+id/image_button"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/select_image"
+        android:scaleType="fitCenter"
+        android:layout_below="@id/add_photos_toolbar"
+        android:layout_marginTop="66dp"
+        android:background="@color/postBackground"/>
+
+    <EditText
+        android:id="@+id/ed_about_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/image_button"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input"
+        android:hint="Write Something about the post"
+        android:textSize="20sp"
+        android:padding="15dp"/>
+
+    <Button
+        android:id="@+id/btn_add_post"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_about_post"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:padding="15dp"
+        android:text="Add Post"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

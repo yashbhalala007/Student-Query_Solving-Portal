@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    tools:context=".CommentActivity"
+    android:background="@drawable/comment_layout_background">
+
+    <TextView
+        android:id="@+id/com_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comments"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/com_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/com_textview"
+        android:layout_above="@id/com_input"
+        android:layout_margin="5dp" />
+
+    <EditText
+        android:id="@+id/com_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/input"
+        android:hint="Write a comment here"
+        android:inputType="textMultiLine"
+        android:padding="15dp" />
+
+    <ImageButton
+        android:id="@+id/com_post_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/com_input"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/postBackground"
+        android:src="@drawable/send"
+        android:scaleType="centerCrop" />
+
+</RelativeLayout>
