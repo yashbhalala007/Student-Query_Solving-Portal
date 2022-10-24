@@ -5,7 +5,7 @@
     android:id="@+id/drawer_my_photos"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyPhotos"
+    tools:context=".Dashboard"
     android:background="@color/postBackground">
 
     <RelativeLayout

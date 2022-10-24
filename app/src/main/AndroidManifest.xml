@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.madproject">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -15,23 +14,57 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CommentActivity"></activity>
-        <activity android:name=".FullPostActivity" />
-        <activity android:name=".Profile" />
-        <activity android:name=".MyPhotos" />
-        <activity android:name=".AddPhotos" />
-        <activity android:name=".DashboardActivity" />
-        <activity android:name=".RegisterActivity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".ResetPasswordActivity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".MainActivity">
+        <activity android:name=".AdminMeetings" />
+        <activity android:name=".AdminFullQuestionActivity" />
+        <activity android:name=".AdminFullAnswerActivity" />
+        <activity android:name=".StartingAppActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AdminDashboard" />
+        <activity android:name=".AdminComments" />
+        <activity android:name=".AdminQuestions" />
+        <activity android:name=".AdminEvents" />
+        <activity android:name=".AdminPhotos" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".MyQuestionActivity" />
+        <activity android:name=".FullAnswerActivity" />
+        <activity android:name=".AnswerActivity" />
+        <activity android:name=".FullQuestionActivity" />
+        <activity android:name=".AdminSearchItems" />
+        <activity android:name=".AskQuestion" />
+        <activity
+            android:name=".FacultyMeetingRequests"
+            android:label="@string/title_activity_faculty_meeting_requests"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FacultyHelp"
+            android:label="@string/title_activity_faculty_help"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AskFaculty" />
+        <activity android:name=".MyEvents" />
+        <activity android:name=".FullEventActivity" />
+        <activity android:name=".FullPostActivity" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".AddEvents" />
+        <activity android:name=".Events" />
+        <activity android:name=".MyPhotos" />
+        <activity android:name=".CommentActivity" />
+        <activity android:name=".AddPhotos" />
+        <activity android:name=".Photos" />
+        <activity android:name=".EditProfile" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Dashboard"/>
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity" />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />

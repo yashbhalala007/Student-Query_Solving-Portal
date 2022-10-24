@@ -5,45 +5,55 @@
     android:id="@+id/drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DashboardActivity"
+    tools:context=".Dashboard"
     android:background="@color/postBackground">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
 
         <include
-            android:id="@+id/photos_toolbar"
+            android:id="@+id/mainpage_toolbar"
             layout="@layout/appbar_layout">
         </include>
+
+        <EditText
+            android:id="@+id/dashboard_question_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="10sp"
+            android:hint="Search question here"
+            android:background="@drawable/input"
+            android:layout_margin="10dp"
+            android:layout_below="@id/mainpage_toolbar"/>
 
         <FrameLayout
             android:id="@+id/main_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/photos_toolbar"
+            android:layout_below="@+id/mainpage_toolbar"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="56dp">
+            android:layout_marginTop="115dp">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/all_users_photos_list"
+                android:id="@+id/all_users_que_list"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
-
         </FrameLayout>
-
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/photosButton"
+            android:id="@+id/question_Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/fab_margin"
             android:backgroundTint="@color/colorPrimaryDark"
-            android:src="@drawable/add_post"
+            android:src="@drawable/ic_add_circle_black_24dp"
             app:borderWidth="0dp"/>
-
     </RelativeLayout>
 
     <com.google.android.material.navigation.NavigationView
@@ -52,9 +62,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:layout_marginBottom="3dp"
-        android:background="@color/postBackground">
+        android:background="@color/colorPrimary">
 
 
     </com.google.android.material.navigation.NavigationView>
-
 </androidx.drawerlayout.widget.DrawerLayout>

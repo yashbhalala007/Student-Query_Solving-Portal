@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nva_profile"
+        android:title="Profile"
+        android:icon="@drawable/profile_icon"/>
+
+    <item
+        android:id="@+id/nva_meeting_requests"
+        android:title="Meeting Requests"
+        android:icon="@drawable/ic_meetings"/>
+
+    <item
+        android:id="@+id/nva_addque"
+        android:title="My Question"
+        android:icon="@drawable/ic_que"/>
+
+    <item
+        android:id="@+id/nva_event"
+        android:title="Events"
+        android:icon="@drawable/ic_events"/>
+
+    <item
+        android:id="@+id/nva_photo"
+        android:title="Photos"
+        android:icon="@drawable/add_post"/>
+
+    <item
+        android:id="@+id/nva_logout"
+        android:title="Logout"
+        android:icon="@drawable/logout"/>
+
+</menu>

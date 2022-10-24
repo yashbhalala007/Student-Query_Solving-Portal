@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEvents"
+    android:background="@color/postBackground">
+
+    <include
+        android:id="@+id/add_event_toolbar"
+        layout="@layout/appbar_layout">
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/add_event_toolbar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_editor_absoluteX="8sp"
+        app:layout_editor_absoluteY="8dp">
+
+        <RelativeLayout
+            android:id="@+id/event_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <ImageButton
+                android:id="@+id/event_date_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calendar"
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/event_display_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Date"
+                android:textSize="20sp"
+                android:padding="20sp"
+                android:layout_marginTop="65dp"
+                android:layout_toEndOf="@id/event_date_button" />
+
+            <Spinner
+                android:id="@+id/event_select_state"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/input"
+                android:spinnerMode="dropdown"
+                android:layout_below="@id/event_display_date"/>
+
+            <Spinner
+                android:id="@+id/event_select_city"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/input"
+                android:spinnerMode="dropdown"
+                android:layout_below="@+id/event_select_state"/>
+
+            <ImageButton
+                android:id="@+id/event_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/select_image"
+                android:layout_below="@id/event_select_city"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"/>
+
+            <EditText
+                android:id="@+id/event_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Write Something about "
+                android:background="@drawable/input"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:padding="15dp"
+                android:layout_below="@id/event_pic"
+                android:layout_margin="20dp"/>
+
+            <Button
+                android:id="@+id/event_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Event"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:background="@drawable/button"
+                android:layout_below="@id/event_des"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:padding="15dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

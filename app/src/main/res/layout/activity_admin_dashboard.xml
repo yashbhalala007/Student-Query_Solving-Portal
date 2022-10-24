@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminDashboard"
+    android:background="@color/postBackground">
+
+    <include
+        android:id="@+id/admin_mainpage_toolbar"
+        layout="@layout/appbar_layout">
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/admin_mainpage_toolbar">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_editor_absoluteX="8sp"
+            app:layout_editor_absoluteY="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/admin_add_user"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        android:text="Add Users"
+                        android:textSize="25sp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/button"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/admin_profile"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            android:text="Profile"
+                            android:textSize="25sp"
+                            android:textColor="@android:color/white"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/button"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/admin_question"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        android:text="Questions"
+                        android:textSize="25sp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/button"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/admin_meetings"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            android:text="Meetings"
+                            android:textSize="25sp"
+                            android:textColor="@android:color/white"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/button"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/admin_events"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        android:text="Events"
+                        android:textSize="25sp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/button"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/admin_photos"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            android:text="Photos"
+                            android:textSize="25sp"
+                            android:textColor="@android:color/white"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/button"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/admin_logout"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            android:text="Logout"
+                            android:textSize="25sp"
+                            android:textColor="@android:color/white"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/button"/>
+                    </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

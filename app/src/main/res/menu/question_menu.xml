@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_edit_question"
+        android:title="Edit Question"/>
+
+    <item
+        android:id="@+id/menu_delete_question"
+        android:title="Delete Question"/>
+
+</menu>

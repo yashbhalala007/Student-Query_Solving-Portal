@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminQuestions"
+    android:background="@color/postBackground">
+
+    <include
+        android:id="@+id/admin_question_toolbar"
+        layout="@layout/appbar_layout">
+    </include>
+
+    <EditText
+        android:id="@+id/admin_question_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="10sp"
+        android:hint="Search user events here"
+        android:background="@drawable/input"
+        android:layout_margin="10dp"
+        android:layout_below="@id/admin_question_toolbar"/>
+
+    <FrameLayout
+        android:id="@+id/admin_question_main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/admin_events_toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="115dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/admin_question_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</RelativeLayout>
